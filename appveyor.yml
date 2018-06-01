@@ -1,0 +1,18 @@
+version: 1.0.{build}
+image: Visual Studio 2013
+build_script:
+- cmd: >-
+    hg clone https://bitbucket.org/jeromnimo/wmv_sdk -r 930824b
+    
+    cd wmv_sdk
+
+    .\wmv_set_env.bat
+
+    mkdir C:\projects\wowmodelviewer\build
+
+    cd C:\projects\wowmodelviewer\build
+
+    cmake -G "Visual Studio 12 2013" ..\src
+
+    cmake --build . --target release --config Release
+test: off
