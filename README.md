@@ -6,4 +6,6 @@ Free and open source viewer for WoW Models.
  
  ### Origin
  
- Rep. origin : https://bitbucket.org/wowmodelviewer/wowmodelviewer/src/default/
+ Rep. origin : [BitBucket][1]
+
+[1]: https://bitbucket.org/wowmodelviewer/wowmodelviewer/src/default/
